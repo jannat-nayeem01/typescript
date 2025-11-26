@@ -1,7 +1,5 @@
 
-//TODO: Problem 1
 
-console.log("\nProblem 1 RESULT: \n");
 const formatValue= (value: string | number | boolean)=>{
  if(typeof(value)==="number"){
      value = value*10;
@@ -22,8 +20,7 @@ console.log(formatValue(5));
 console.log(formatValue(true));
 
 
-//TODO: Problem 2
-console.log("\nProblem 2 RESULT: \n");
+
 const getLength = (value: string | number[])=>{
     if(typeof value === "string"){return value.length;}
     if(Array.isArray(value))
@@ -35,8 +32,7 @@ const getLength = (value: string | number[])=>{
 console.log(getLength('typescript'));
 console.log(getLength([10,20,30,40]));
 
-//TODO : Problem 3
-console.log("\nProblem 3 RESULT: \n");
+
 class Person{
     name:string;
     age:number;
@@ -55,8 +51,7 @@ console.log(person1.getDetails());
 const person2 = new Person('Alice',25);
 console.log(person2.getDetails());
 
-// TODO: Problem 4
-console.log("\nProblem 4 RESULT: \n");
+
 
 type Rating = 0| 1 | 2 | 3 |4 |5;
 interface items {
@@ -84,8 +79,7 @@ const books = [{
 
 console.log(filterByRating(books));
 
-// TODO: Problem 5
-console.log("\nProblem 5 RESULT: \n");
+
 
 type User= {
     id: number;
@@ -111,8 +105,7 @@ const users = [
 
 console.log(filterActiveUsers(users));
 
-// TODO: Problem 6
-console.log("\nProblem 6 RESULT: \n");
+
 
 interface Book{
     title :string;
@@ -132,8 +125,7 @@ const myBook: Book = {
 
 printBookDetails(myBook);
 
-// TODO: Problem 7
-console.log("\nProblem 7 RESULT: \n");
+
 
 const getUniqueValues  = <T> (array1:T[],array2: T[]):T[] =>{
     const uniqueArray:T[] = [];
@@ -166,8 +158,7 @@ const array1 = [1, 2, 3, 4, 5];
 const array2 = [3, 4, 5, 6, 7];
 console.log(getUniqueValues(array1, array2));
 
-// TODO: Problem 8
-console.log("\nProblem 8 RESULT: \n");
+
 
 const calculateTotalPrice = (product:{
     name:string,
@@ -194,8 +185,6 @@ const products = [
 
 console.log(calculateTotalPrice(products));
 
-// TODO: Problem 9
-console.log("\nProblem 9 RESULT: \n");
 
 
 
